@@ -1,64 +1,62 @@
-**Щоб створити базову структуру html, напишіть символ !і натисніть клавішу Tab. В результаті файл заповниться таким вмістом:**
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-  &lt;head&gt;
-    &lt;meta charset="UTF-8" /&gt;
-    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;&lt;/body&gt;
-&lt;/html&gt;
+**Щоб створити базову структуру html, напишіть символ !і натисніть клавішу Tab. В результаті файл
+заповниться таким вмістом:**
+
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html lang="en"&gt;</p>
+  <p>&lt;head&gt;</p>
+    <p>&lt;meta charset="UTF-8" /&gt;</p>
+    <p>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;</p>
+    <p>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
+    <p>&lt;title&gt;Document&lt;/title&gt;</p>
+  <p>&lt;/head&gt;</p>
+  <p>&lt;body&gt;&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
 
 _Оператори вкладеності використовують для позиціонування елементів усередині згенерованого дерева._
 
-Дочірній елемент
-**Оператор &gt; дозволяє вкладати один елемент в інший:**
+Дочірній елемент **Оператор &gt; дозволяє вкладати один елемент в інший:**
 
 div&gt;ul&gt;li→
 
-&lt;div&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
+<p>&lt;div&gt;</p>
+ <p>&lt;ul&gt;</p>
+  <p>&lt;li&gt;&lt;/li&gt;</p>
+ <p>&lt;/ul&gt;</p>
+<p>&lt;/div&gt;</p>
 
-Сусідний елемент
-**Оператор + дозволяє розмістити елементи поряд один з одним на одному рівні:**
+Сусідний елемент **Оператор + дозволяє розмістити елементи поряд один з одним на одному рівні:**
 
 div+p+bq→
 
-&lt;div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;blockquote&gt;&lt;/blockquote&gt;
+<p>&lt;div&gt;&lt;/div&gt;</p>
+<p>&lt;p&gt;&lt;/p&gt;</p>
+<p>&lt;blockquote&gt;&lt;/blockquote&gt;</p>
 
-Повторення
-**Оператор * дозволяє визначити, скільки разів повинен виводитись елемент:**
+Повторення **Оператор \* дозволяє визначити, скільки разів повинен виводитись елемент:**
 
-ul&gt;li*3→
+ul&gt;li\*3→
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
+<p>&lt;ul&gt;</p>
+ <p>&lt;li&gt;&lt;/li&gt;</p>
+ <p>&lt;li&gt;&lt;/li&gt;</p>
+ <p>&lt;li&gt;&lt;/li&gt;</p>
+<p>&lt;/ul&gt;</p>
 
-Угруповання
-**Круглі дужки дозволяють виділити в абревіатурі окремі піддерев'я:**
+Угруповання **Круглі дужки дозволяють виділити в абревіатурі окремі піддерев'я:**
 
-div&gt;(header&gt;ul&gt;li*2&gt;a)+footer&gt;p→
+div&gt;(header&gt;ul&gt;li\*2&gt;a)+footer&gt;p→
 
-&lt;div&gt;
-  &lt;header&gt;
-    &lt;ul&gt;     
-      &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;   
-      &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/header&gt;
-  &lt;footer&gt;
-    &lt;p&gt;&lt;/p&gt;
-  &lt;/footer&gt;
-&lt;/div&gt;
+<p>&lt;div&gt;</p>
+ <p>&lt;header&gt;</p>
+  <p>&lt;ul&gt;</p>
+   <p>&lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;</p>
+   <p>&lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;</p>
+  <p>&lt;/ul&gt;</p>
+ <p>&lt;/header&gt;</p>
+ <p>&lt;footer&gt;</p>
+  <p>&lt;p&gt;&lt;/p&gt;</p>
+ <p>&lt;/footer&gt;</p>
+</p>&lt;/div&gt;</p>
 
 _Можна вкладати групи одна в одну та повторювати їх за допомогою оператора множення:_
 
